@@ -1,0 +1,24 @@
+#titled-border-pane {
+	-fx-background-color: transparant;
+}
+
+#titled-border-pane .label {
+  -fx-font: 28.0px Vivaldi;
+}
+
+#titled-border-pane .bordered-titled-title {
+  -fx-background-color: transparant;
+  -fx-translate-y: -16.0;
+}
+
+#titled-border-pane .bordered-titled-border {
+  -fx-content-display: top;
+  -fx-border-insets: 20.0 15.0 15.0 15.0;
+  -fx-background-color: transparant;
+  -fx-border-color: black;
+  -fx-border-width: 2.0;
+}
+
+#titled-border-pane .bordered-titled-content {
+  -fx-padding: 26.0 10.0 10.0 10.0;
+}

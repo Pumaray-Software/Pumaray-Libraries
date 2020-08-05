@@ -1,0 +1,182 @@
+10:09:53,946 ERROR PumFXBeanBinding:47 - Class com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding can not access a member of class com.pumaray.lib.javafx.mvc.model.binding.javafx.MyPumBean with modifiers "private"
+java.lang.IllegalAccessException: Class com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding can not access a member of class com.pumaray.lib.javafx.mvc.model.binding.javafx.MyPumBean with modifiers "private"
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding.updateViewValue(PumFXBeanBinding.java:38)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding.lambdaUpdateViewValue(PumFXBeanBinding.java:44)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding$$Lambda$152/26298004.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding.setPumBean(PumFXBeanBinding.java:66)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding.updateView(PumFXBeanBinding.java:52)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.MyView$1.handle(PumFXBeanBindingTest.java:58)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.MyView$1.handle(PumFXBeanBindingTest.java:1)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8390)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3758)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3486)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2495)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:350)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:275)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$350(GlassViewEventHandler.java:385)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$$Lambda$149/2944632.get(Unknown Source)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:404)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:384)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:927)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$48(GtkApplication.java:139)
+	at com.sun.glass.ui.gtk.GtkApplication$$Lambda$41/19140780.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+11:31:56,164 DEBUG PumFXBeanBinding:67 - Class cast exeption throws
+java.lang.ClassCastException: javafx.scene.control.TextInputControl$TextProperty cannot be cast to com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBinding
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding.changed(PumFXBeanBinding.java:61)
+	at com.sun.javafx.binding.ExpressionHelper$Generic.fireValueChangedEvent(ExpressionHelper.java:361)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.scene.control.TextInputControl$TextProperty.fireValueChangedEvent(TextInputControl.java:1386)
+	at javafx.scene.control.TextInputControl$TextProperty.markInvalid(TextInputControl.java:1390)
+	at javafx.scene.control.TextInputControl$TextProperty.controlContentHasChanged(TextInputControl.java:1329)
+	at javafx.scene.control.TextInputControl$TextProperty.access$1600(TextInputControl.java:1297)
+	at javafx.scene.control.TextInputControl.lambda$new$165(TextInputControl.java:139)
+	at javafx.scene.control.TextInputControl$$Lambda$74/12881188.invalidated(Unknown Source)
+	at com.sun.javafx.binding.ExpressionHelper$SingleInvalidation.fireValueChangedEvent(ExpressionHelper.java:137)
+	at com.sun.javafx.binding.ExpressionHelper.fireValueChangedEvent(ExpressionHelper.java:81)
+	at javafx.scene.control.TextField$TextFieldContent.insert(TextField.java:87)
+	at javafx.scene.control.TextInputControl.replaceText(TextInputControl.java:1201)
+	at javafx.scene.control.TextInputControl.filterAndSet(TextInputControl.java:1168)
+	at javafx.scene.control.TextInputControl.access$900(TextInputControl.java:79)
+	at javafx.scene.control.TextInputControl$TextProperty.doSet(TextInputControl.java:1407)
+	at javafx.scene.control.TextInputControl$TextProperty.set(TextInputControl.java:1320)
+	at javafx.scene.control.TextInputControl$TextProperty.set(TextInputControl.java:1297)
+	at javafx.beans.property.StringProperty.setValue(StringProperty.java:65)
+	at javafx.beans.property.StringProperty.setValue(StringProperty.java:57)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBinding.setValue(PumFXBinding.java:42)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding.updateViewValue(PumFXBeanBinding.java:41)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding.lambdaUpdateViewValue(PumFXBeanBinding.java:47)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding$$Lambda$152/584005.accept(Unknown Source)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1374)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding.setPumBean(PumFXBeanBinding.java:72)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.PumFXBeanBinding.updateView(PumFXBeanBinding.java:55)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.MyView$1.handle(PumFXBeanBindingTest.java:58)
+	at com.pumaray.lib.javafx.mvc.model.binding.javafx.MyView$1.handle(PumFXBeanBindingTest.java:1)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8390)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3758)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3486)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2495)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:350)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:275)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$350(GlassViewEventHandler.java:385)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$$Lambda$149/27441534.get(Unknown Source)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:404)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:384)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:927)
+	at com.sun.glass.ui.gtk.GtkApplication._runLoop(Native Method)
+	at com.sun.glass.ui.gtk.GtkApplication.lambda$null$48(GtkApplication.java:139)
+	at com.sun.glass.ui.gtk.GtkApplication$$Lambda$41/19140780.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:745)
+11:49:49,384 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:51,615 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:52,094 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:52,358 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:52,577 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:52,782 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:52,990 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:53,406 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:53,695 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:53,919 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:54,159 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:54,366 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:54,582 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:54,814 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:55,394 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:55,664 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:55,878 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:56,094 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:56,310 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:56,486 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:56,670 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:56,854 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:57,054 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:57,422 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:57,630 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:57,814 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:57,990 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:58,190 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:58,358 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:58,518 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:58,670 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:58,942 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:59,142 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:59,334 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:59,550 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:59,734 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
+11:49:59,894 DEBUG PumFXBeanBinding:76 - Class cast exeption throws
