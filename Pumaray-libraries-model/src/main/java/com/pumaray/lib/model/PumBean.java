@@ -12,5 +12,7 @@ public interface PumBean extends Serializable{
 	PumVersion getBeanVersion();
 	void setBeanVersion(PumVersion version);
 	
+	
+	boolean isValid();
 
 }

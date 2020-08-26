@@ -38,4 +38,13 @@ public class PumDefaultBean implements PumBean {
 	public String toString() {
 		return "PumDefaultBean [beanName=" + beanName + ", beanVersion=" + beanVersion + "]";
 	}
+
+	@Override
+	public boolean isValid() {
+		return (
+				beanName != null &&
+				beanVersion != null
+				);
+				
+	}
 }
