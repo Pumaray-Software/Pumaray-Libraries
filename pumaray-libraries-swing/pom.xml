@@ -1,0 +1,14 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.pumaray.lib</groupId>
+		<artifactId>pumaray-libraries-parent</artifactId>
+		<version>3.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>pumaray-libraries-swing</artifactId>
+	<properties>
+		<path_dir-deploy>/home/randy/Projects/Pumaray/Libraries/Docs/apidocs/swing/</path_dir-deploy>
+	</properties>
+
+</project>
