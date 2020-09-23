@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.pumaray.lib</groupId>
-	<artifactId>Pumaray-libraries-parent</artifactId>
+	<artifactId>pumaray-libraries-parent</artifactId>
 	<packaging>pom</packaging>
 	<version>3.0.0-SNAPSHOT</version>
 
@@ -19,12 +19,12 @@
 		</repository>
 	</distributionManagement>
 	<modules>
-		<module>Pumaray-libraries-model</module>
-		<module>Pumaray-libraries-tools</module>
-		<module>Pumaray-libraries-utils</module>
-		<module>Pumaray-libraries-javafx</module>
-		<module>Pumaray-libraries-swing</module>
-		<module>Pumaray-libraries-credentials</module>
+		<module>pumaray-libraries-model</module>
+		<module>pumaray-libraries-tools</module>
+		<module>pumaray-libraries-utils</module>
+		<module>pumaray-libraries-javafx</module>
+		<module>pumaray-libraries-swing</module>
+		<module>pumaray-libraries-credentials</module>
 	</modules>
 	<properties>
 		<version_maven-compiler>3.6.0</version_maven-compiler>
@@ -176,17 +176,17 @@
 			</dependency>
 			<dependency>
 				<groupId>com.pumaray.lib</groupId>
-				<artifactId>Pumaray-libraries-model</artifactId>
+				<artifactId>pumaray-libraries-model</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.pumaray.lib</groupId>
-				<artifactId>Pumaray-libraries-utils</artifactId>
+				<artifactId>pumaray-libraries-utils</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.pumaray.lib</groupId>
-				<artifactId>Pumaray-libraries-tools</artifactId>
+				<artifactId>pumaray-libraries-tools</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
