@@ -1,0 +1,15 @@
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/model/tools/adapter/json/PumUserJsonDeserializer.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/tools/generators/country/PumCountryMapDBGenerator.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/tools/validator/PumValidator.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/model/tools/entity/builder/PumEntityImageBuilder.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/model/tools/entity/builder/PumEntityBuilder.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/model/tools/generators/country/model/PumCity.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/tools/generators/validator/PumValidator.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/tools/generators/country/PumCountryXMLGenerator.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/tools/generators/properties/tools/PropertyFileVisitor.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/tools/generators/country/model/PumCountry.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/tools/adapter/json/PumUserJsonDeserializer.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/tools/generators/properties/PropertiesGenerator.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/tools/validator/impl/PumBeanValidator.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/model/tools/generators/country/model/PumCountry.java
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-tools/src/main/java/com/pumaray/lib/tools/generators/country/model/PumCity.java

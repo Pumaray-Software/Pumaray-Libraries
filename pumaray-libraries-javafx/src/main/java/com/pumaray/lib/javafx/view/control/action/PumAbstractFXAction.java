@@ -126,24 +126,29 @@ public abstract class PumAbstractFXAction implements PumFXAction {
 
 	@Override
 	public void enable() {
-		buttons.stream().forEach(b -> b.setDisable(false));
-		items.stream().forEach(b -> b.setDisable(false));
+		setDisable(false);
+		updateButtonStatus();
 	}
 	
 	@Override
 	public void disable() {
-		buttons.stream().forEach(b -> b.setDisable(true));
-		items.stream().forEach(b -> b.setDisable(true));
+		setDisable(true);
+		updateButtonStatus();
+	}
+	
+	private void updateButtonStatus() {
+		buttons.stream().forEach(b -> b.setDisable(disable));
+		items.stream().forEach(b -> b.setDisable(disable));
 	}
 	
 	@Override
 	public void setDisable(Boolean disable) {
-		if(disable) {
-			disable();
-		}
-		else {
-			enable();
-		}
+		this.disable = disable;
+	}
+	
+	@Override
+	public boolean isDisabled() {
+		return disable;
 	}
 	
 	@Override

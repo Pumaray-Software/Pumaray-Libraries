@@ -7,5 +7,7 @@ public interface PumAction {
 	void disable();
 	
 	void setDisable(Boolean disable);
+	
+	boolean isDisabled();
 
 }
