@@ -9,5 +9,16 @@ public class PumBeanValidator implements PumValidator<PumBean>{
 	public boolean isValid(PumBean e) {
 		return e.isValid();
 	}
+	
+	public boolean areValid(PumBean ...beans) {
+		boolean result = true;
+		for( PumBean bean : beans) {
+			if(!bean.isValid()) {
+				result = false;
+				break;
+			}
+		}
+		return result;
+	}
 
 }
