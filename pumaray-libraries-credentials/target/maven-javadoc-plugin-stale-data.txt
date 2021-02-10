@@ -1,0 +1,78 @@
+/usr/lib/jvm/java-11-openjdk-amd64/bin/javadoc
+@options
+@packages
+-classpath
+'/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-model/target/pumaray-libraries-model-3.0.1-SNAPSHOT.jar:/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-utils/target/pumaray-libraries-utils-3.0.1-SNAPSHOT.jar:/pumaray/REPOS/Maven/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar:/pumaray/REPOS/Maven/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.6/jackson-databind-2.8.6.jar:/pumaray/REPOS/Maven/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar:/pumaray/REPOS/Maven/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar:/pumaray/REPOS/Maven/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/pumaray/REPOS/Maven/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/pumaray/REPOS/Maven/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'8'
+-sourcepath
+'/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/src/main/java:/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2020. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'pumaray-libraries-credentials 3.0.1-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'pumaray-libraries-credentials 3.0.1-SNAPSHOT API'
+com.pumaray.lib.cred.user
+com.pumaray.lib.cred.user
+com.pumaray.lib.cred.user.role.impl
+com.pumaray.lib.cred.user.role.impl
+com.pumaray.lib.cred.user.role.type.impl
+com.pumaray.lib.cred.user.role.type.impl
+com.pumaray.lib.cred.user.role.type.impl
+com.pumaray.lib.cred.user.role.type.impl
+com.pumaray.lib.cred.user
+com.pumaray.lib.cred.user.impl
+com.pumaray.lib.cred.user.impl
+com.pumaray.lib.cred.user.impl
+com.pumaray.lib.cred.user.impl
+com.pumaray.lib.cred.user.impl
+com.pumaray.lib.cred.user.impl
+com.pumaray.lib.cred.user.impl
+com.pumaray.lib.cred.user
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-model/target/pumaray-libraries-model-3.0.1-SNAPSHOT.jar = 1607100563309
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-utils/target/pumaray-libraries-utils-3.0.1-SNAPSHOT.jar = 1607100556861
+/pumaray/REPOS/Maven/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar = 1579040736088
+/pumaray/REPOS/Maven/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.8.6/jackson-databind-2.8.6.jar = 1579040733300
+/pumaray/REPOS/Maven/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar = 1579040733348
+/pumaray/REPOS/Maven/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.8.6/jackson-core-2.8.6.jar = 1579040733080
+/pumaray/REPOS/Maven/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar = 1579040721471
+/pumaray/REPOS/Maven/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar = 1579040721503
+/pumaray/REPOS/Maven/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar = 1579040720787
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/src/main/java = 1578211293000
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/generated-sources/annotations = 1607100589797
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/type-search-index.zip = 1607100593897
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/package-search-index.js = 1607100593897
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/package-search-index.zip = 1607100593897
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/overview-summary.html = 1607100593917
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/constant-values.html = 1607100593801
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/index-all.html = 1607100593901
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/script.js = 1607100593921
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/type-search-index.js = 1607100593897
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/allpackages-index.html = 1607100593909
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/member-search-index.zip = 1607100593901
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/deprecated-list.html = 1607100593913
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/element-list = 1607100593769
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/index.html = 1607100593917
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/allclasses.html = 1607100593913
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/overview-tree.html = 1607100593877
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/member-search-index.js = 1607100593897
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/allclasses-index.html = 1607100593905
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/search.js = 1607100593925
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/serialized-form.html = 1607100593813
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/help-doc.html = 1607100593921
+/pumaray/WORKSPACE/Standard/pumaray-libraries-parent/pumaray-libraries-credentials/target/site/apidocs/stylesheet.css = 1607100593921
