@@ -14,5 +14,7 @@ public interface PumBean extends Serializable{
 	
 	
 	boolean isValid();
+	
+	boolean isEqualsTo(PumBean other);
 
 }
