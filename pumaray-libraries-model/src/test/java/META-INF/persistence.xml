@@ -8,35 +8,52 @@
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>com.pumaray.model.registry.PumRegistry</class>
-		
+
 		<properties>
-			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
-     	 	<property name="javax.persistence.jdbc.url" value="jdbc:derby:memory:sampleDB;create=true"/>
-  
-   	 		<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
-      		<property name="javax.persistence.schema-generation.scripts.action" value="drop-and-create"/>
-     		<property name="javax.persistence.schema-generation.scripts.create-target" value="sampleCreate.ddl"/>
-      		<property name="javax.persistence.schema-generation.scripts.drop-target" value="sampleDrop.ddl"/>
-    
-			
+			<property name="javax.persistence.jdbc.driver"
+				value="org.apache.derby.jdbc.EmbeddedDriver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:derby:memory:sampleDB;create=true" />
+
+			<property
+				name="javax.persistence.schema-generation.database.action"
+				value="drop-and-create" />
+			<property
+				name="javax.persistence.schema-generation.scripts.action"
+				value="drop-and-create" />
+			<property
+				name="javax.persistence.schema-generation.scripts.create-target"
+				value="sampleCreate.ddl" />
+			<property
+				name="javax.persistence.schema-generation.scripts.drop-target"
+				value="sampleDrop.ddl" />
+
+
 		</properties>
 	</persistence-unit>
-	
+
 	<persistence-unit name="pum-registry-pu-mysql"
 		transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-				<class>com.pumaray.model.registry.PumRegistry</class>
-		
+		<class>com.pumaray.model.registry.PumRegistry</class>
+
 		<properties>
-			<property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver" />
-           	<property name="javax.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/PumRegistryDB" />
-           	<property name="eclipselink.target-database" value="MySQL"/>
-           	
-           	<property name="javax.persistence.jdbc.user" value="pumaray" />
-			<property name="javax.persistence.jdbc.password" value="pumaray" />
-			
-     		<property name="javax.persistence.schema-generation.scripts.create-target" value="mysql-create.ddl"/>
-      		<property name="javax.persistence.schema-generation.scripts.drop-target" value="mysql-drop.ddl"/>
+			<property name="javax.persistence.jdbc.driver"
+				value="org.mariadb.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mariadb://localhost:3306/PumRegistryDB" />
+			<property name="eclipselink.target-database" value="MySQL" />
+
+			<property name="javax.persistence.jdbc.user" value="pumaray" />
+			<property name="javax.persistence.jdbc.password"
+				value="pumaray" />
+
+			<property
+				name="javax.persistence.schema-generation.scripts.create-target"
+				value="mysql-create.ddl" />
+			<property
+				name="javax.persistence.schema-generation.scripts.drop-target"
+				value="mysql-drop.ddl" />
 		</properties>
 	</persistence-unit>
 </persistence>
