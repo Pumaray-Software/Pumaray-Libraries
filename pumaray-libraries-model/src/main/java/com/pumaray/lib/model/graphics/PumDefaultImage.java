@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.UnsupportedEncodingException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Arrays;
 
 import com.pumaray.lib.model.impl.PumDefaultBean;
 import com.pumaray.lib.utils.graphics.PumSupportedImageExtension;

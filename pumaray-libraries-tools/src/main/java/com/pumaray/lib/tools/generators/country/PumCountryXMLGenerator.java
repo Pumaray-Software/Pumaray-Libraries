@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.neovisionaries.i18n.CountryCode;
+//import com.neovisionaries.i18n.CountryCode;
 import com.pumaray.lib.tools.generators.country.model.PumCity;
 import com.pumaray.lib.tools.generators.country.model.PumCountry;
 
@@ -29,7 +29,7 @@ public class PumCountryXMLGenerator {
 	// private List<PumCountry> countries = new ArrayList<PumCountry>();
 
 	public PumCountryXMLGenerator(File inFile, File outFile) {
-		this.inFile = inFile;
+/**		this.inFile = inFile;
 		this.outFile = outFile;
 
 		current = new PumCountry();
@@ -44,7 +44,7 @@ public class PumCountryXMLGenerator {
 	 * ", " + locale); } }
 	 */
 
-	private void manageCountry(String code) {
+/**	private void manageCountry(String code) {
 		if (current != null || !current.getCode().equals(code)) {
 			if (countries.containsKey(code)) {
 				current = countries.get(code);
@@ -97,7 +97,7 @@ public class PumCountryXMLGenerator {
 	 * System.out.println("."); index = 0; } } reader.close(); }
 	 */
 
-	private void readFromInFile() throws IOException {
+/**	private void readFromInFile() throws IOException {
 		Stream<String> lines = Files
 				.lines(Paths.get(inFile.getParentFile().getAbsolutePath(), inFile.getName()));
 		lines.forEach(this::parse);
@@ -116,4 +116,6 @@ public class PumCountryXMLGenerator {
 		this.countries = countries;
 	}
 
+**/
+}
 }

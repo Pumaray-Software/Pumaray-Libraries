@@ -1,66 +1,164 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.pumaray.lib</groupId>
+	<groupId>com.pumaray.libraries</groupId>
 	<artifactId>pumaray-libraries-parent</artifactId>
+	<version>2.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<version>3.0.1-SNAPSHOT</version>
 
-	<scm>
-		<url>scm:svn:http://pumaraysoftware.svn.cloudforge.com/pumaray_libraries/trunk/</url>
-		<developerConnection>scm:svn:https://pumaraysoftware.svn.cloudforge.com/pumaray_libraries/trunk/</developerConnection>
-	</scm>
-	<distributionManagement>
-		<repository>
-			<id>Local Repository</id>
-			<name>Pumaray Repository</name>
-			<url>file:///pumaray/.m2/repository</url>
-		</repository>
-	</distributionManagement>
-	<modules>
-		<module>pumaray-libraries-model</module>
-		<module>pumaray-libraries-tools</module>
-		<module>pumaray-libraries-utils</module>
-		<module>pumaray-libraries-javafx</module>
-		<module>pumaray-libraries-swing</module>
-		<module>pumaray-libraries-credentials</module>
-	</modules>
 	<properties>
-		<version_maven-compiler>3.6.0</version_maven-compiler>
-		<version_maven-release>2.5.3</version_maven-release>
-		<version_maven-resources>3.0.2</version_maven-resources>
-		<version_maven-failsafe>2.19.1</version_maven-failsafe>
-		<version_java>1.8</version_java>
-		<version_validation>1.1.0.Beta2</version_validation>
-		<version_junit>4.11</version_junit>
-		<version_slf4j>1.7.12</version_slf4j>
-		<version_eclipse-jpa>2.1.1</version_eclipse-jpa>
-		<version_mapdb>2.0-beta13</version_mapdb>
-		<version_nv-i18n>1.17</version_nv-i18n>
-		<version_jfxtras-labs>8.0-r4</version_jfxtras-labs>
-		<version_flying-saucer>9.0.9</version_flying-saucer>
-		<version_jaxrs-api>2.0.1</version_jaxrs-api>
-		<version_jackson-api>2.8.6</version_jackson-api>
-		<version_jpa>2.2</version_jpa>
+		<!-- Maven plugin versions -->
+		<version-maven-compiler-plugin>3.9.0</version-maven-compiler-plugin>
+		<version-maven-source-plugin>3.2.0</version-maven-source-plugin>
+		<version-maven-javadoc-plugin>3.3.1</version-maven-javadoc-plugin>
+		<version-maven-resources-plugin>3.2.0</version-maven-resources-plugin>
+		<version-maven-site-plugin>3.10.0</version-maven-site-plugin>
+		<version-maven-project-info-reports-plugin>3.1.2</version-maven-project-info-reports-plugin>
+
+		<!-- Java versions -->
+		<version-java-source>11</version-java-source>
+		<version-java-target>11</version-java-target>
+
+		<!-- extern dependencies versions -->
+		<version-jakarta-validation>3.0.1</version-jakarta-validation>
+		<version-jakarta-annotations>2.0.0</version-jakarta-annotations>
+		<version-mapdb>3.0.8</version-mapdb>
+		<version-javafx-controls>17.0.2</version-javafx-controls>
+		<version-jfxtras-labs>9.0-r1</version-jfxtras-labs>
+
+		<!-- Persistence dependencies versions -->
+		<version-jakarta-persistence>3.0.0</version-jakarta-persistence>
+
+		<!-- xml and jason dependencies versions -->
+		<version-jakarta-xml-bind>3.0.1</version-jakarta-xml-bind>
+		<version-com-fasterxml-jackson>2.13.1</version-com-fasterxml-jackson>
+
+		<!-- Logger dependencies -->
+		<version-org-slf4j>1.7.35</version-org-slf4j>
+
+		<!-- webservices api -->
+		<version-jakarta-ws-rs>3.0.0</version-jakarta-ws-rs>
+
+		<!-- Pumaray libraries -->
 
 		<path_dir-deploy>/home/randy/Projects/Pumaray/Libraries/Docs/apidocs/</path_dir-deploy>
-		<path_dir-created-apidocs>${project.build.directory}/apidocs</path_dir-created-apidocs>
-		<version_gson>2.8.0</version_gson>
+		<path_dir-created-apidocs>${project.build.directory}</path_dir-created-apidocs>
+
+
 	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<dependency>
+				<groupId>jakarta.persistence</groupId>
+				<artifactId>jakarta.persistence-api</artifactId>
+				<version>${version-jakarta-persistence}</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/jakarta.ws.rs/jakarta.ws.rs-api -->
+			<dependency>
+				<groupId>jakarta.ws.rs</groupId>
+				<artifactId>jakarta.ws.rs-api</artifactId>
+				<version>${version-jakarta-ws-rs}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>jakarta.xml.bind</groupId>
+				<artifactId>jakarta.xml.bind-api</artifactId>
+				<version>${version-jakarta-xml-bind}</version>
+			</dependency>
+
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${version-com-fasterxml-jackson}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${version-org-slf4j}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>jakarta.validation</groupId>
+				<artifactId>jakarta.validation-api</artifactId>
+				<version>${version-jakarta-validation}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.pumaray.libraries</groupId>
+				<artifactId>pumaray-libraries-model</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.pumaray.libraries</groupId>
+				<artifactId>pumaray-libraries-utils</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.pumaray.libraries</groupId>
+				<artifactId>pumaray-libraries-tools</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.pumaray.libraries</groupId>
+				<artifactId>pumaray-libraries-credentials</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.mapdb</groupId>
+				<artifactId>mapdb</artifactId>
+				<version>${version-mapdb}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-controls</artifactId>
+				<version>${version-javafx-controls}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.jfxtras</groupId>
+				<artifactId>jfxtras-labs</artifactId>
+				<version>${version-jfxtras-labs}</version>
+			</dependency>
+
+
+		</dependencies>
+	</dependencyManagement>
+
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${version_maven-compiler}</version>
-				<configuration>
-					<source>${version_java}</source>
-					<target>${version_java}</target>
-				</configuration>
-			</plugin>
-		</plugins>
+		<pluginManagement>
+			<plugins>
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${version-maven-compiler-plugin}</version>
+					<configuration>
+						<source>${version-java-source}</source>
+						<target>${version-java-target}</target>
+						<encoding>UTF-8</encoding>
+						<compilerArgs>
+							<arg>-Xlint:unchecked</arg>
+							<arg>--add-modules</arg>
+							<arg>jakarta.persistence</arg>
+						</compilerArgs>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
 	</build>
+
 	<profiles>
 		<profile>
 			<id>install-with-source-and-javadocs</id>
@@ -69,6 +167,7 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-source-plugin</artifactId>
+						<version>${version-maven-source-plugin}</version>
 						<executions>
 							<execution>
 								<id>attach-sources</id>
@@ -81,16 +180,22 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>${version-maven-javadoc-plugin}</version>
+						<configuration>
+							<!-- Default configuration for all reports -->
+							<noqualifier>all</noqualifier>
+							<destDir>javadoc</destDir>
+						</configuration>
 						<executions>
 							<execution>
-								<id>attach-javadocs</id>
+								<id>aggregate</id>
 								<goals>
-									<goal>jar</goal>
+									<goal>aggregate</goal>
 								</goals>
 								<configuration>
-									<additionalparam>-Xdoclint:none</additionalparam>
-									<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
-									<source>8</source>
+									<!-- Specific configuration for the aggregate report -->
+									<reportOutputDirectory>${documents</reportOutputDirectory>
+									<destDir>javadoc</destDir>
 								</configuration>
 							</execution>
 							<!-- <execution> <id>aggregate</id> <goals> <goal>aggregate</goal> 
@@ -101,7 +206,7 @@
 					</plugin>
 					<plugin>
 						<artifactId>maven-resources-plugin</artifactId>
-						<version>${version_maven-resources}</version>
+						<version>${version-maven-resources-plugin}</version>
 						<executions>
 							<execution>
 								<id>copy-resources</id>
@@ -126,13 +231,13 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-site-plugin</artifactId>
-						<version>3.7.1</version>
+						<version>${version-maven-site-plugin}</version>
 					</plugin>
 
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-project-info-reports-plugin</artifactId>
-						<version>3.0.0</version>
+						<version>${version-maven-project-info-reports-plugin}</version>
 					</plugin>
 
 				</plugins>
@@ -155,152 +260,13 @@
 			</build>
 		</profile>
 	</profiles>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>com.neovisionaries</groupId>
-				<artifactId>nv-i18n</artifactId>
-				<version>${version_nv-i18n}</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.validation</groupId>
-				<artifactId>validation-api</artifactId>
-				<version>${version_validation}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>${version_junit}</version>
-				<scope>test</scope>
-			</dependency>
-			<dependency>
-				<groupId>com.pumaray.lib</groupId>
-				<artifactId>pumaray-libraries-model</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.pumaray.lib</groupId>
-				<artifactId>pumaray-libraries-utils</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.pumaray.lib</groupId>
-				<artifactId>pumaray-libraries-tools</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-log4j12</artifactId>
-				<version>${version_slf4j}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>org.jfxtras</groupId>
-				<artifactId>jfxtras-labs</artifactId>
-				<version>${version_jfxtras-labs}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>${version_slf4j}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>javax.persistence</groupId>
-				<artifactId>javax.persistence-api</artifactId>
-				<version>${version_jpa}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.xhtmlrenderer</groupId>
-				<artifactId>flying-saucer-core</artifactId>
-				<version>${version_flying-saucer}</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.ws.rs</groupId>
-				<artifactId>javax.ws.rs-api</artifactId>
-				<version>${version_jaxrs-api}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.jaxrs</groupId>
-				<artifactId>jackson-jaxrs-base</artifactId>
-				<version>${version_jackson-api}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.fasterxml.jackson.core</groupId>
-				<artifactId>jackson-databind</artifactId>
-				<version>${version_jackson-api}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.kitfox.svg</groupId>
-				<artifactId>svg-salamander</artifactId>
-				<version>1.0</version>
-			</dependency>
 
-
-			<dependency>
-				<groupId>javax.xml.bind</groupId>
-				<artifactId>jaxb-api</artifactId>
-				<version>2.3.1</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.openjfx</groupId>
-				<artifactId>javafx-controls</artifactId>
-				<version>12.0.2</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.mapdb</groupId>
-				<artifactId>mapdb</artifactId>
-				<version>${version_mapdb}</version>
-				<!-- <scope>test</scope> -->
-			</dependency>
-			<dependency>
-				<groupId>com.google.code.gson</groupId>
-				<artifactId>gson</artifactId>
-				<version>${version_gson}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
-	<reporting>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>3.7.1</version>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>3.0.0</version>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>3.2.0</version>
-				<configuration>
-					<additionalparam>-Xdoclint:none</additionalparam>
-					<javadocExecutable>${java.home}/bin/javadoc</javadocExecutable>
-					<source>8</source>
-				</configuration>
-				<reportSets>
-					<reportSet>
-						<id>aggregate</id>
-						<inherited>false</inherited>
-						<reports>
-							<report>aggregate</report>
-						</reports>
-					</reportSet>
-					<reportSet>
-						<id>default</id>
-						<reports>
-							<report>javadoc</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-			</plugin>
-		</plugins>
-	</reporting>
+	<modules>
+		<module>pumaray-libraries-model</module>
+		<module>pumaray-libraries-utils</module>
+		<module>pumaray-libraries-tools</module>
+		<module>pumaray-libraries-credentials</module>
+		<module>pumaray-libraries-swing</module>
+		<module>pumaray-libraries-javafx</module>
+	</modules>
 </project>

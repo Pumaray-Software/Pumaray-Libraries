@@ -3,9 +3,10 @@ package com.pumaray.lib.utils.xml.exporter;
 import java.io.File;
 import java.io.IOException;
 
-import javax.xml.bind.SchemaOutputResolver;
 import javax.xml.transform.Result;
 import javax.xml.transform.stream.StreamResult;
+
+import jakarta.xml.bind.SchemaOutputResolver;
 
 public class PumSchemaExporter extends SchemaOutputResolver{
 	

@@ -1,13 +1,13 @@
 package com.pumaray.lib.model.impl;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.TableGenerator;
-
 import com.pumaray.lib.model.PumEntity;
 import com.pumaray.lib.model.constant.ModelConstant;
+
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.TableGenerator;
 
 @MappedSuperclass
 public class PumDefaultEntity extends PumDefaultBean implements PumEntity<Long> {

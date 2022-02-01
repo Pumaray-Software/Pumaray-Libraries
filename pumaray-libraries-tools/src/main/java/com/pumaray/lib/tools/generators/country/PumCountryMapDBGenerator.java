@@ -14,13 +14,13 @@ import org.mapdb.DBMaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.neovisionaries.i18n.CountryCode;
+//import com.neovisionaries.i18n.CountryCode;
 import com.pumaray.lib.tools.generators.country.model.PumCity;
 import com.pumaray.lib.tools.generators.country.model.PumCountry;
 
 public class PumCountryMapDBGenerator {
 
-	private final static Logger logger = LoggerFactory.getLogger(PumCountryMapDBGenerator.class);
+	/**private final static Logger logger = LoggerFactory.getLogger(PumCountryMapDBGenerator.class);
 	private final String SPLITTER = "\t";
 	private final Integer MAX_BEFORE_COMMIT = 250;
 
@@ -42,14 +42,14 @@ public class PumCountryMapDBGenerator {
 				.fileDB(outFile)
 			//	.transactionEnable()
 				.closeOnJvmShutdown()
-				.compressionEnable()
+			//	.compressionEnable()
 				.make();
 		countries =  database.treeMap("Countries");
 		//*/
 //		countries = database
 //				.treeMap("Countries",Serializer.STRING,	Serializer.GroupSerializerObjectArray<PumCountry> )
 //				.createOrOpen();
-	}
+/**	}
 
 	private void manageCountry(String code) {
 		if (!current.getCode().equals(code)) {
@@ -130,5 +130,7 @@ public class PumCountryMapDBGenerator {
 		readFromInFile();
 		writeToOutFile();
 	}
+	
+	**/
 
 }

@@ -3,7 +3,7 @@ package com.pumaray.lib.cred.user.impl;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.OneToMany;
+import jakarta.persistence.OneToMany;
 
 public class PumEntityAuthUserFor<E> extends PumEntityAuthUser {
 

@@ -3,15 +3,15 @@ package com.pumaray.lib.cred.user.impl;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlTransient;
-
 import com.pumaray.lib.cred.user.PumAuthUser;
 import com.pumaray.lib.model.impl.PumDefaultEntity;
+
+import jakarta.persistence.AttributeOverride;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlTransient;
 
 @Entity(name = "PUM_ENTITY_AUTH_USER")
 @AttributeOverride(name = PumDefaultEntity.ID, column = @Column(name = PumEntityAuthUser.USER_ID))

@@ -5,11 +5,6 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.ValidationException;
-import javax.validation.Validator;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +16,10 @@ import com.pumaray.lib.javafx.view.model.PumMessage;
 import com.pumaray.lib.model.PumBean;
 import com.pumaray.lib.tools.validator.PumValidator;
 
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validation;
+import jakarta.validation.ValidationException;
+import jakarta.validation.Validator;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 

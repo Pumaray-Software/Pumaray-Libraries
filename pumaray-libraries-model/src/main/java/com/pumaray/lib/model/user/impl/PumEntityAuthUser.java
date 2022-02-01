@@ -2,18 +2,16 @@ package com.pumaray.lib.model.user.impl;
 
 import java.util.Arrays;
 
-import javax.persistence.AttributeOverride;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlTransient;
-
 import com.pumaray.lib.model.impl.PumDefaultEntity;
 import com.pumaray.lib.model.user.PumAuthUser;
 
-@Entity(name = "PUM_ENTITY_AUTH_USER")
-@AttributeOverride(name = PumDefaultEntity.ID, column = @Column(name = PumEntityAuthUser.USER_ID))
+import jakarta.persistence.Column;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlTransient;
+
+@jakarta.persistence.Entity(name = "PUM_ENTITY_AUTH_USER")
+@jakarta.persistence.AttributeOverride(name = PumDefaultEntity.ID, column = @Column(name = PumEntityAuthUser.USER_ID))
 @XmlAccessorType(XmlAccessType.FIELD)
 public class PumEntityAuthUser extends PumEntityUser implements PumAuthUser<Long> {
 

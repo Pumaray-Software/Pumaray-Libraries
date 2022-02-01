@@ -1,47 +1,38 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.pumaray.lib</groupId>
+		<groupId>com.pumaray.libraries</groupId>
 		<artifactId>pumaray-libraries-parent</artifactId>
-		<version>3.0.1-SNAPSHOT</version>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>pumaray-libraries-javafx</artifactId>
-	<properties>
-		<path_dir-deploy>/home/randy/Projects/Pumaray/Libraries/Docs/apidocs/javafx/</path_dir-deploy>
-	</properties>
-
 	<dependencies>
 		<dependency>
-			<groupId>com.pumaray.lib</groupId>
+			<groupId>com.pumaray.libraries</groupId>
 			<artifactId>pumaray-libraries-model</artifactId>
 		</dependency>
+
 		<dependency>
-			<groupId>com.pumaray.lib</groupId>
-			<artifactId>pumaray-libraries-utils</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>validation-api</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-log4j12</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.pumaray.lib</groupId>
+			<groupId>com.pumaray.libraries</groupId>
 			<artifactId>pumaray-libraries-tools</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.jfxtras</groupId>
-			<artifactId>jfxtras-labs</artifactId>
-		</dependency>
+
 		<dependency>
 			<groupId>org.openjfx</groupId>
 			<artifactId>javafx-controls</artifactId>
 		</dependency>
+
+		<dependency>
+			<groupId>org.jfxtras</groupId>
+			<artifactId>jfxtras-labs</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+
 	</dependencies>
-
-
 </project>

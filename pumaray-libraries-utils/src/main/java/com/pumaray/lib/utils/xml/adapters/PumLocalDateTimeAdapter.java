@@ -3,10 +3,10 @@ package com.pumaray.lib.utils.xml.adapters;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import javax.xml.bind.annotation.adapters.XmlAdapter;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import jakarta.xml.bind.annotation.adapters.XmlAdapter;
 
 /**
  * Formatter for dateTime using the default ISO_DATE_TIME parameter

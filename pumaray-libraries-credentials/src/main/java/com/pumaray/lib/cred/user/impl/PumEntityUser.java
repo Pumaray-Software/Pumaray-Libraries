@@ -2,13 +2,10 @@ package com.pumaray.lib.cred.user.impl;
 
 import java.time.LocalDateTime;
 
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
-
 import com.pumaray.lib.cred.user.PumUser;
 import com.pumaray.lib.model.impl.PumDefaultEntity;
+
+import jakarta.persistence.MappedSuperclass;
 
 @MappedSuperclass
 public class PumEntityUser extends PumDefaultEntity implements PumUser<Long> {

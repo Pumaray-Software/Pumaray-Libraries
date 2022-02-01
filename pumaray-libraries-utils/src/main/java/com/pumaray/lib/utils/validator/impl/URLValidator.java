@@ -3,12 +3,12 @@ package com.pumaray.lib.utils.validator.impl;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-
 import com.pumaray.lib.utils.constants.PumPattern;
 import com.pumaray.lib.utils.validator.annotation.ValidURL;
 import com.pumaray.lib.utils.validator.impl.helper.URLType;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class URLValidator implements ConstraintValidator<ValidURL,String>  {
 	

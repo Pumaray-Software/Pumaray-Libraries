@@ -2,7 +2,8 @@ package com.pumaray.lib.javafx.mvc.view.bean.binding;
 
 import java.text.Format;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.pumaray.lib.model.PumBean;
 
@@ -14,7 +15,7 @@ import javafx.util.StringConverter;
 
 public class PumFXObjectBinding<T extends PumBean> {
 
-	private final static Logger logger = Logger.getLogger(PumFXObjectBinding.class);
+	private final static Logger logger = LoggerFactory.getLogger(PumFXObjectBinding.class);
 
 	private Format formatter = null;
 	private StringConverter converter = null;

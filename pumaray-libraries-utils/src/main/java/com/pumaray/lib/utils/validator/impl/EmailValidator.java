@@ -3,11 +3,11 @@ package com.pumaray.lib.utils.validator.impl;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-
 import com.pumaray.lib.utils.constants.PumPattern;
 import com.pumaray.lib.utils.validator.annotation.ValidEmail;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class EmailValidator implements ConstraintValidator<ValidEmail, String> {
 	
