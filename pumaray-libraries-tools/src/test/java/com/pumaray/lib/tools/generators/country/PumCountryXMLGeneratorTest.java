@@ -19,7 +19,7 @@ public class PumCountryXMLGeneratorTest {
 
 	private final static Logger logger = LoggerFactory.getLogger(PumCountryXMLGeneratorTest.class);
 	//private final static File inFile = new File("/home/randy/Projects/Chepaki/Development Files/small-country.txt");
-	private final static File inFile = new File("/home/randy/Projects/Chepaki/Development Files/allCountries.txt");
+	private final static File inFile = new File("/pumaray/PogramResources/allCountries.txt");
 	//private final static File inFile = new File("/home/randy/Downloads/incountry.txt");
 	private final static File outFile = new File("/home/randy/Downloads/outcountries.xml");
 	private final static File dbFile = new File("/home/randy/Downloads/countries.db");
