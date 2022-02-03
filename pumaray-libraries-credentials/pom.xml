@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.pumaray.libraries</groupId>
 		<artifactId>pumaray-libraries-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>4.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>pumaray-libraries-credentials</artifactId>
 
@@ -17,6 +17,10 @@
 		<dependency>
 			<groupId>jakarta.xml.bind</groupId>
 			<artifactId>jakarta.xml.bind-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>jakarta.persistence</groupId>
+			<artifactId>jakarta.persistence-api</artifactId>
 		</dependency>
 	</dependencies>
 </project>

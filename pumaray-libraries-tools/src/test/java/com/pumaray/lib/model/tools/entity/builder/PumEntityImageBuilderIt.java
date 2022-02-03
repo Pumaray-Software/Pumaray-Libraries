@@ -1,10 +1,10 @@
 package com.pumaray.lib.model.tools.entity.builder;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.net.URL;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import com.pumaray.lib.model.graphics.PumEntityImage;
 
@@ -13,11 +13,11 @@ public class PumEntityImageBuilderIt {
 	@Test
 	public void testCreateInstanceFromUrl() {
 		try {
-		PumEntityImage image = new PumEntityImageBuilder().createInstanceFromUrl(
-				new URL("https://www.debian.org/Pics/openlogo-50.png"));
-		assertTrue(image != null);
+			PumEntityImage image = new PumEntityImageBuilder().createInstanceFromUrl(
+					new URL("https://www.debian.org/Pics/openlogo-50.png"));
+			assertTrue(image != null);
 		}
-		catch(Exception ex) {
+		catch (Exception ex) {
 			ex.printStackTrace();
 		}
 	}

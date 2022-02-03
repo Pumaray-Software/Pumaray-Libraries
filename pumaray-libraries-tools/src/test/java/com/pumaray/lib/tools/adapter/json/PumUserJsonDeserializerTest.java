@@ -3,7 +3,7 @@ package com.pumaray.lib.tools.adapter.json;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import com.google.gson.Gson;
 import com.pumaray.lib.model.user.PumUser;

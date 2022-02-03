@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.pumaray.libraries</groupId>
 		<artifactId>pumaray-libraries-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>4.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>pumaray-libraries-model</artifactId>
 

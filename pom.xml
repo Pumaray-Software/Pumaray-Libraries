@@ -33,6 +33,7 @@
 		<!-- xml and jason dependencies versions -->
 		<version-jakarta-xml-bind>3.0.1</version-jakarta-xml-bind>
 		<version-com-fasterxml-jackson>2.13.1</version-com-fasterxml-jackson>
+		<version-gson>2.8.9</version-gson>
 
 		<!-- Logger dependencies -->
 		<version-org-slf4j>1.7.35</version-org-slf4j>
@@ -41,6 +42,13 @@
 		<version-jakarta-ws-rs>3.0.0</version-jakarta-ws-rs>
 
 		<!-- Pumaray libraries -->
+
+
+		<!-- Test dependencies -->
+		<version-junit-jupiter>5.8.2</version-junit-jupiter>
+
+
+		<!-- NOn dependendies properties -->
 
 		<path_dir-deploy>/home/randy/Projects/Pumaray/Libraries/Docs/apidocs/</path_dir-deploy>
 		<path_dir-created-apidocs>${project.build.directory}</path_dir-created-apidocs>
@@ -131,6 +139,20 @@
 				<version>${version-jfxtras-labs}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>${version-gson}</version>
+			</dependency>
+
+			<!-- Test dependencies -->
+			<dependency>
+				<groupId>org.junit</groupId>
+				<artifactId>junit-bom</artifactId>
+				<version>${version-junit-jupiter}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 
 		</dependencies>
 	</dependencyManagement>
