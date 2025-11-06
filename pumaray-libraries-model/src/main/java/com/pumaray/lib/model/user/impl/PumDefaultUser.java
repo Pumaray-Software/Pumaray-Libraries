@@ -1,15 +1,16 @@
 package com.pumaray.lib.model.user.impl;
 
 import java.util.Date;
+import java.util.Objects;
 
 import com.pumaray.lib.model.impl.PumDefaultBean;
 import com.pumaray.lib.model.user.PumUser;
 
-public class PumDefaultUser<K> extends PumDefaultBean implements PumUser<K> {
+public class PumDefaultUser extends PumDefaultBean implements PumUser {
 
 	private static final long serialVersionUID = 363784280522170680L;
 	
-	private K id;
+	private String uuid;
 	private String name;
 	private String alias;
 	private Date lastModified;
@@ -22,12 +23,12 @@ public class PumDefaultUser<K> extends PumDefaultBean implements PumUser<K> {
 		this.alias = alias;
 	}
 
-	public K getId() {
-		return id;
+	public String getUuid() {
+		return uuid;
 	}
 
-	public void setId(K id) {
-		this.id = id;
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
 	}
 
 	public String getName() {
@@ -38,14 +39,6 @@ public class PumDefaultUser<K> extends PumDefaultBean implements PumUser<K> {
 		this.name = name;
 	}
 
-	public Date getLastModified() {
-		return lastModified;
-	}
-
-	public void setLastModified(Date lastModified) {
-		this.lastModified = lastModified;
-	}
-
 	public String getAlias() {
 		return alias;
 	}
@@ -54,9 +47,37 @@ public class PumDefaultUser<K> extends PumDefaultBean implements PumUser<K> {
 		this.alias = alias;
 	}
 
+	public Date getLastModified() {
+		return lastModified;
+	}
+
+	public void setLastModified(Date lastModified) {
+		this.lastModified = lastModified;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(alias, lastModified, name, uuid);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		PumDefaultUser other = (PumDefaultUser) obj;
+		return Objects.equals(alias, other.alias) && Objects.equals(lastModified, other.lastModified)
+				&& Objects.equals(name, other.name) && Objects.equals(uuid, other.uuid);
+	}
+
 	@Override
 	public String toString() {
-		return "PumDefaultUser [id=" + id + ", name=" + name + ", alias=" + alias + ", lastModified=" + lastModified
+		return "PumDefaultUser [uuid=" + uuid + ", name=" + name + ", alias=" + alias + ", lastModified=" + lastModified
 				+ "]";
 	}
+
+	
 }

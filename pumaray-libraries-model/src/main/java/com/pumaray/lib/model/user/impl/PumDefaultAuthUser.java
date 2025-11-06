@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import com.pumaray.lib.model.user.PumAuthUser;
 
-public class PumDefaultAuthUser<K> extends PumDefaultUser<K> implements PumAuthUser<K> {
+public class PumDefaultAuthUser extends PumDefaultUser implements PumAuthUser {
 	
 	private static final long serialVersionUID = -9208884254431870905L;
 	

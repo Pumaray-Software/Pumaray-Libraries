@@ -4,7 +4,7 @@ import java.util.Date;
 
 import com.pumaray.lib.model.PumBean;
 
-public interface PumUser<K> extends PumBean {
+public interface PumUser extends PumBean {
 
 	public static final String ID = "id";
 	public static final String NAME = "name";

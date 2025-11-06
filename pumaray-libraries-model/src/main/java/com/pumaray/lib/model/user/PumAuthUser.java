@@ -1,6 +1,6 @@
 package com.pumaray.lib.model.user;
 
-public interface PumAuthUser<K> extends PumUser<K> {
+public interface PumAuthUser extends PumUser {
 
 	public static final String PASSWORD = "password";
 	public static final String QUESTION = "question";

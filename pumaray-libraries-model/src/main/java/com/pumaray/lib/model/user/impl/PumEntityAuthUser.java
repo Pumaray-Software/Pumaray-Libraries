@@ -2,6 +2,7 @@ package com.pumaray.lib.model.user.impl;
 
 import java.util.Arrays;
 
+import com.pumaray.lib.model.PumEntity;
 import com.pumaray.lib.model.impl.PumDefaultEntity;
 import com.pumaray.lib.model.user.PumAuthUser;
 
@@ -13,7 +14,7 @@ import jakarta.xml.bind.annotation.XmlTransient;
 @jakarta.persistence.Entity(name = "PUM_ENTITY_AUTH_USER")
 @jakarta.persistence.AttributeOverride(name = PumDefaultEntity.ID, column = @Column(name = PumEntityAuthUser.USER_ID))
 @XmlAccessorType(XmlAccessType.FIELD)
-public class PumEntityAuthUser extends PumEntityUser implements PumAuthUser<Long> {
+public class PumEntityAuthUser extends PumEntityUser implements PumAuthUser{
 
 	private static final long serialVersionUID = -5220576337776137380L;
 	public static final String USER_ID = "userId";

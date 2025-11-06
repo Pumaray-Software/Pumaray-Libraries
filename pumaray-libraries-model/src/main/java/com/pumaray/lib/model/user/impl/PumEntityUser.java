@@ -11,7 +11,7 @@ import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 
 @MappedSuperclass
-public class PumEntityUser extends PumDefaultEntity implements PumUser<Long> {
+public class PumEntityUser extends PumDefaultEntity implements PumUser {
 
 	private static final long serialVersionUID = -1807596501048051969L;
 	
