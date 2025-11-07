@@ -4,10 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.pumaray.libraries</groupId>
 	<artifactId>pumaray-libraries-parent</artifactId>
-	<version>4.0.1-SNAPSHOT</version>
+	<version>4.0.2</version>
 	<packaging>pom</packaging>
 
 	<properties>
+	
+	    <revision>4.0.2</revision>
 		<!-- Maven plugin versions -->
 		<version-maven-compiler-plugin>3.9.0</version-maven-compiler-plugin>
 		<version-maven-source-plugin>3.2.0</version-maven-source-plugin>
@@ -32,7 +34,7 @@
 
 		<!-- xml and jason dependencies versions -->
 		<version-jakarta-xml-bind>3.0.1</version-jakarta-xml-bind>
-		<version-com-fasterxml-jackson>2.13.1</version-com-fasterxml-jackson>
+		<version-com-fasterxml-jackson>2.20.1</version-com-fasterxml-jackson>
 		<version-gson>2.8.9</version-gson>
 
 		<!-- Logger dependencies -->
